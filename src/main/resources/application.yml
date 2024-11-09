@@ -1,0 +1,15 @@
+server:
+  port: 8090
+proxy:
+  url: http://wsqdermyy.cn/jtmis/
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@192.168.0.242:1521/orcl
+    username: healthcloud
+    password: healthcloud
+    driver-class-name: oracle.jdbc.OracleDriver
+  mybatis:
+    type-aliases-package: com.hb.api.model
+    mapper-locations: classpath:mapper/*.xml
+    configuration:
+      map-underscore-to-camel-case: true
